@@ -28,6 +28,39 @@ main{
     align-items: center;
 }
 
+.responsive-page{
+    display: none;
+    border: #C79B95 3px solid;
+    border-radius: 20px;
+    background-color: #C79189;
+    width:  80vw;
+    height: 15vh;
+    margin-top: 5vh;
+    box-shadow:
+  4.5px 4.5px 4.9px rgba(0, 0, 0, 0.029),
+  12.5px 12.5px 13.6px rgba(0, 0, 0, 0.036),
+  30.1px 30.1px 32.9px rgba(0, 0, 0, 0.043),
+  100px 100px 109px rgba(0, 0, 0, 0.06)
+}
+.responsive-page a{
+    background-color: #C79189;
+    display: flex;
+    align-items: center;
+}
+.responsive-page img{
+    background-color: #C79189;
+    margin-left: 2vw;
+    height: 10vh;
+}
+.responsive-page p{
+    color: #000;
+    margin-left: 5vw;
+    background-color: #C79189;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
 .card-box{
     display: flex;
     border: #C79B95 3px solid;
@@ -51,10 +84,12 @@ main{
 }
 .card-box  img{
     background-color: #C79189;
+    margin-left: 2vw;
     height: 10vh;
 }
 .card-box p{
     color: #000;
+    margin-left: 5vw;
     background-color: #C79189;
     font-weight: 500;
     font-size: 1.5rem;
@@ -85,4 +120,46 @@ footer{
     margin: 2vh;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width:900px) {
+
+    
+    main{
+        margin: auto;
+        margin-top: 5vh;
+        justify-content: center;
+        width: 100vw;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .responsive-page{
+        display: flex;
+        align-items: center;
+        width:  23vw;
+        margin: 2vw;
+        height: 15vh;
+    }
+    .responsive-page p{
+        margin-left: 1vw;
+        font-size: 1.3rem;
+    }
+    .responsive-page img{
+        height: 8vh;
+    }
+    .card-box{
+        margin: 2vw;
+        width:  23vw;
+        height: 15vh;
+    }
+    .card-box p{
+        margin-left: 1vw;
+        font-size: 1.3rem;
+    }
+    .card-box img{
+        height: 8vh;
+    }
+    footer{
+        display: none;
+    }
 }
