@@ -45,4 +45,32 @@ main{
 }
 iframe{
     margin-top: 3vh;
+    width: 260px;
+    height: 145px; 
+}
+
+@media screen and (min-width:900px) {
+    main{
+        margin-top: 5vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    iframe{
+        width: 40vw;
+        height: 50vh;
+    }
+    .thingToDo{
+        font-weight: 800;
+        font-size: 2 .5rem;
+    }
+    .thingToDo p{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .toDo{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+        width: 40vw;
+    }
 }
