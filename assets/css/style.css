@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500;600;700;800&display=swap');
+
+*{
+    background-color: #C35C4C;
+    margin: 0;
+    font-family: 'Anek Telugu', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color: #B82711;
+    border-radius: 0px  0px  20px 20px;
+}
+
+h1{
+    margin: auto;
+    background-color: #B82711;
+    font-size: 2rem;
+    color: #000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-box{
+    display: flex;
+    border: #C79B95 3px solid;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #C79189;
+    width:  80vw;
+    height: 15vh;
+    margin-top: 5vh;
+    box-shadow:
+  4.5px 4.5px 4.9px rgba(0, 0, 0, 0.029),
+  12.5px 12.5px 13.6px rgba(0, 0, 0, 0.036),
+  30.1px 30.1px 32.9px rgba(0, 0, 0, 0.043),
+  100px 100px 109px rgba(0, 0, 0, 0.06)
+;
+}
+.card-box a{
+    background-color: #C79189;
+    display: flex;
+    align-items: center;
+}
+.card-box  img{
+    background-color: #C79189;
+    height: 10vh;
+}
+.card-box p{
+    color: #000;
+    background-color: #C79189;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: #C35C4C;
+    margin-top: 5vh;
+    display: flex;
+    list-style: none;
+    width: auto;
+}
+.navigation{
+    background-color: #C35C4C;
+    display: flex;
+    margin: auto;
+}
+.navigation-item{
+    padding: 0;
+    background-color: #B82711;
+    margin: 2vw;
+    border-radius: 5px;
+}
+.navigation-item a{
+    font-size: 1.2rem;
+    background-color: #B82711;
+    color: #000;
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+}
