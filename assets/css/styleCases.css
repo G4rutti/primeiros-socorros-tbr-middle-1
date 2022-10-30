@@ -22,7 +22,34 @@ h1{
     color: #000;
 }
 
+.direita{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+.direita button{
+    border:  0;
+    border-radius: 5px;
+    height: 8vh;
+    width: 20vw;
+    cursor: pointer;
+    background-color: #B82711;
+    align-self: center;
+}
+.direita button{
+    background-color: #B82711;
+    color: white;
+    font-size: 1rem;
+}
+.direita button:hover{
+    transition-duration: 0.5s;
+    background-color: #C35C4C;
+    color: #B82711;
+}
 
+.esquerda{
+    width: 50vw;
+}
 .back-to-menu{
     display: flex;
     margin-top: 2vh;
@@ -58,6 +85,12 @@ iframe{
     iframe{
         width: 40vw;
         height: 50vh;
+    }
+    .direita{
+        width: 100vw;
+    }
+    .esquerda{
+        width: 100vw;
     }
     .thingToDo{
         font-weight: 800;
