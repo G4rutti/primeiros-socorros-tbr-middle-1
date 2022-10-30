@@ -23,7 +23,7 @@ h1{
 }
 
 .direita{
-    width: 50vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +31,7 @@ h1{
     border:  0;
     border-radius: 5px;
     height: 8vh;
-    width: 20vw;
+    width: 50vw;
     cursor: pointer;
     background-color: #B82711;
     align-self: center;
@@ -48,7 +48,7 @@ h1{
 }
 
 .esquerda{
-    width: 50vw;
+    width: 100vw;
 }
 .back-to-menu{
     display: flex;
@@ -72,25 +72,27 @@ main{
 }
 iframe{
     margin-top: 3vh;
-    width: 260px;
-    height: 145px; 
+    width: 100vw;
+    height: 30vh; 
 }
 
 @media screen and (min-width:900px) {
     main{
         margin-top: 5vh;
         flex-direction: row;
-        justify-content: space-around;
     }
     iframe{
         width: 40vw;
         height: 50vh;
     }
     .direita{
-        width: 100vw;
+        width: 50vw;
+    }
+    .direita button{
+        width: 20vw;
     }
     .esquerda{
-        width: 100vw;
+        width: 50vw;
     }
     .thingToDo{
         font-weight: 800;
