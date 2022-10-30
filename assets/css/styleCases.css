@@ -35,6 +35,7 @@ h1{
     cursor: pointer;
     background-color: #B82711;
     align-self: center;
+    margin-bottom: 1vh;
 }
 .direita button{
     background-color: #B82711;
@@ -90,6 +91,7 @@ iframe{
     }
     .direita button{
         width: 20vw;
+        margin-bottom: 1vh;
     }
     .esquerda{
         width: 50vw;
