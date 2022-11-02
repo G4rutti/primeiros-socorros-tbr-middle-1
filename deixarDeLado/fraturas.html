@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styleCases.css">
+    <script src="https://kit.fontawesome.com/d4c0dbaccd.js" crossorigin="anonymous"></script>
+    <title>Fraturas</title>
+</head>
+<body>
+    <header>
+        <h1>Fraturas</h1>
+    </header>
+    <div class="back-to-menu">
+        <a href="index.html"><img src="assets/img/Voltar.png" alt=""></a>
+    </div>
+    <main>
+        <div class="direita">
+            <ol class="toDo">
+                <li class="thingToDo"><p>Deve-se imobilizar o membro e nunca tentar recolocar o osso fraturado em seu local correto.</p></li>
+                <li class="thingToDo"><p>No caso de fraturas expostas, deve-se ainda controlar hemorragias utilizando um lenço ou um pano limpo, que deve ser colocado sobre o local e pressionado.</p></li>
+                <li class="thingToDo"><p>O transporte de uma pessoa com fratura só deve ser feita após imobilizar o local.</p></li>
+                <li class="thingToDo"><p>Em caso de fratura no pescoço ou nas costas, a movimentação não deve ser feita.</p></li>
+            </ol>
+            <button onclick="location.href='tel:192';">Ligar para Emergência</button>
+            <button id="btnSpeak">Ouvir Passo a Passo</button>
+        </div>
+        <div class="esquerda">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/66L2rJ9S5nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        </div>
+    </main>
+    <script>
+        var btnSpeak = document.querySelector('#btnSpeak');
+        speaks = [
+        {
+            "name": "Jorge",
+            "lang":"pt-BR"
+        }
+        ]
+
+        btnSpeak.addEventListener('click', () => {
+
+        const msg = new SpeechSynthesisUtterance();
+        msg.volume = 1; //define o volume do áudio (de 0 a 1)
+        msg.rate = 0.8; // define a velocidade do áudio (0.1 a 1)
+        msg.pitch = 1; // define o tom em que o áudio é falado ( de 0 a 2)
+        msg.text = "1 Deve-se imobilizar o membro e nunca tentar recolocar o osso fraturado em seu local correto. 2 No caso de fraturas expostas, deve-se ainda controlar hemorragias utilizando um lenço ou um pano limpo, que deve ser colocado sobre o local e pressionado. 3 O transporte de uma pessoa com fratura só deve ser feita após imobilizar o local. 4 Em caso de fratura no pescoço ou nas costas, a movimentação não deve ser feita.";
+        
+        
+        const voice = speaks[0];
+        // console.log(`Voice: ${voice.name} and Lang: ${voice.lang}`);
+        voice.voiceURI = voice.name; //voiceURI busca o servidor da voz escolhida, no caso, pt-BR defnido em voice.name
+        msg.lang = voice.lang; // Define o idioma a ser utilizado para a fala, no caso, o que foi definido para voice.lang
+        
+        speechSynthesis.speak(msg); //executa a voz
+        
+
+        });
+    </script>
+</body>
+</html>
